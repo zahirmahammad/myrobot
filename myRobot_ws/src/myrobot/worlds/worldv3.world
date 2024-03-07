@@ -1,0 +1,355 @@
+<?xml version="1.0"?>
+
+<sdf version="1.6">
+  <world name="default">
+
+    <scene>
+      <sky>
+        <clouds>
+          <speed>12</speed>
+        </clouds>
+      </sky>
+    </scene>
+
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    
+    
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose frame=''>0.319654 -0.235002 9.29441 0 1.5138 0.009599</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+
+    <physics type="ode">
+      <real_time_update_rate>1000.0</real_time_update_rate>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>150</iters>
+          <precon_iters>0</precon_iters>
+          <sor>1.400000</sor>
+          <use_dynamic_moi_rescaling>1</use_dynamic_moi_rescaling>
+        </solver>
+        <constraints>
+          <cfm>0.00001</cfm>
+          <erp>0.2</erp>
+          <contact_max_correcting_vel>2000.000000</contact_max_correcting_vel>
+          <contact_surface_layer>0.01000</contact_surface_layer>
+        </constraints>
+      </ode>
+    </physics>
+    
+    <model name='worldv3'>
+    <pose>0.25 -5 0 0 0 1.57</pose>
+    <link name='base_link'>
+      <inertial>
+        <pose>-0.425152 4.54039 -3.25358 0 -0 0</pose>
+        <mass>2574</mass>
+        <inertia>
+          <ixx>26976.4</ixx>
+          <ixy>-4824.55</ixy>
+          <ixz>0.000970275</ixz>
+          <iyy>14842.8</iyy>
+          <iyz>-0.000204002</iyz>
+          <izz>41732.4</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://myrobot/meshes/worldv3.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__cp10_r_collision_1'>
+        <pose>-3.1339 8.9152 -3.1729 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://myrobot/meshes/cp.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__cp11_g_collision_2'>
+        <pose>4.763 8.4064 -3.1611 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://myrobot/meshes/cp.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__cp1_r_collision_3'>
+        <pose>-3.54 0.19522 -3.1586 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://myrobot/meshes/cp.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__cp2_r_collision_4'>
+        <pose>-2.985 1.8152 -3.1586 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://myrobot/meshes/cp.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__cp3_b_collision_5'>
+        <pose>0.76299 1.4352 -3.1586 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://myrobot/meshes/cp.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__cp4_b_collision_6'>
+        <pose>0.064988 2.9152 -3.1836 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://myrobot/meshes/cp.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__cp5_r_collision_7'>
+        <pose>-3.543 2.3702 -3.1836 0 0 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://myrobot/meshes/cp.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__cp6_r_collision_8'>
+        <pose>-3.11 4.0152 -3.1586 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://myrobot/meshes/cp.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__cp7_b_collision_9'>
+        <pose>0.75999 3.5352 -3.1836 0 0 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://myrobot/meshes/cp.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__cp8_b_collision_10'>
+        <pose>0.014988 5.1152 -3.1586 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://myrobot/meshes/cp.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__cp9_r_collision_11'>
+        <pose>-3.54 4.4952 -3.1586 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://myrobot/meshes/cp.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://myrobot/meshes/worldv3.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__cp10_r_visual_1'>
+        <pose>-2.9139 8.91 -3.1729 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://myrobot/meshes/cp.STL</uri>
+          </mesh>
+        </geometry>
+      <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__cp11_g_visual_2'>
+        <pose>4.760 8.2064 -3.1611 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://myrobot/meshes/cp.STL</uri>
+          </mesh>
+        </geometry>
+          <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__cp1_r_visual_3'>
+        <pose>-3.54 0.19522 -3.1586 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://myrobot/meshes/cp.STL</uri>
+          </mesh>
+        </geometry>
+          <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__cp2_r_visual_4'>
+        <pose>-2.985 1.8152 -3.1586 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://myrobot/meshes/cp.STL</uri>
+          </mesh>
+        </geometry>
+          <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__cp3_b_visual_5'>
+        <pose>0.76299 1.4352 -3.1586 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://myrobot/meshes/cp.STL</uri>
+          </mesh>
+        </geometry>
+          <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Blue</name>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__cp4_b_visual_6'>
+        <pose>0.064988 2.9152 -3.1836 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://myrobot/meshes/cp.STL</uri>
+          </mesh>
+        </geometry>
+          <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Blue</name>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__cp5_r_visual_7'>
+        <pose>-3.543 2.3702 -3.1836 0 0 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://myrobot/meshes/cp.STL</uri>
+          </mesh>
+        </geometry>
+          <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__cp6_r_visual_8'>
+        <pose>-3.11 4.0152 -3.1586 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://myrobot/meshes/cp.STL</uri>
+          </mesh>
+        </geometry>
+          <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__cp7_b_visual_9'>
+        <pose>0.75999 3.5352 -3.1836 0 0 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://myrobot/meshes/cp.STL</uri>
+          </mesh>
+        </geometry>
+          <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Blue</name>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__cp8_b_visual_10'>
+        <pose>0.014988 5.1152 -3.1586 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://myrobot/meshes/cp.STL</uri>
+          </mesh>
+        </geometry>
+          <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Blue</name>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__cp9_r_visual_11'>
+        <pose>-3.53 4.5952 -3.1586 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://myrobot/meshes/cp.STL</uri>
+          </mesh>
+        </geometry>
+          <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+
+
+  </world>
+</sdf>

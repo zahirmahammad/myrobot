@@ -1,0 +1,2114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="world2_upd">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.19563785436553 4.24756535627498 -3.00627152476083"
+        rpy="0 0 0" />
+      <mass
+        value="5714.586" />
+      <inertia
+        ixx="44747.0465524594"
+        ixy="4060.91439683263"
+        ixz="0.0262193501988701"
+        iyy="96560.4090035094"
+        iyz="0.0115501027454025"
+        izz="141114.58145169" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="cp1_b">
+    <inertial>
+      <origin
+        xyz="5.55111512312578E-17 0.00150000000000017 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0107999999999999" />
+      <inertia
+        ixx="3.24809999999994E-06"
+        ixy="-1.87083464840498E-36"
+        ixz="-4.23516473627149E-22"
+        iyy="6.47999999999993E-06"
+        iyz="-1.07857787371586E-23"
+        izz="3.24809999999999E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp1_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp1_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp1j"
+    type="fixed">
+    <origin
+      xyz="0.44197 0.78704 -2.9124"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp1_b" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp2_r">
+    <inertial>
+      <origin
+        xyz="0 0.00149999999999917 4.44089209850063E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000003" />
+      <inertia
+        ixx="3.24810000000006E-06"
+        ixy="-6.61909168367429E-37"
+        ixz="-2.11758236813557E-22"
+        iyy="6.48000000000017E-06"
+        iyz="3.41526225431663E-23"
+        izz="3.24810000000011E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp2_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp2_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp2j"
+    type="fixed">
+    <origin
+      xyz="-6.458 0.26704 -2.9113"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp2_r" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp3_r">
+    <inertial>
+      <origin
+        xyz="0 0.00149999999999983 -4.44089209850063E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0107999999999996" />
+      <inertia
+        ixx="3.24809999999985E-06"
+        ixy="-2.79182735764319E-35"
+        ixz="4.05468305649556E-39"
+        iyy="6.47999999999979E-06"
+        iyz="-2.78462081396989E-24"
+        izz="3.24809999999994E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp3_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp3_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp3j"
+    type="fixed">
+    <origin
+      xyz="-5.903 1.887 -2.9113"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp3_r" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp4_b">
+    <inertial>
+      <origin
+        xyz="2.22044604925031E-16 0.00150000000000006 4.44089209850063E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000003" />
+      <inertia
+        ixx="3.24810000000006E-06"
+        ixy="-1.98523347012721E-23"
+        ixz="-2.11758236813574E-22"
+        iyy="6.48000000000017E-06"
+        iyz="1.43002878418947E-23"
+        izz="3.24810000000011E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp4_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp4_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp4j"
+    type="fixed">
+    <origin
+      xyz="-2.455 1.507 -2.9113"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp4_b" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp5_b">
+    <inertial>
+      <origin
+        xyz="0 0.00150000000000006 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000003" />
+      <inertia
+        ixx="3.24810000000004E-06"
+        ixy="-1.98523347012724E-23"
+        ixz="0"
+        iyy="6.48000000000008E-06"
+        iyz="2.7535177642729E-23"
+        izz="3.24810000000004E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp5_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp5_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp5j"
+    type="fixed">
+    <origin
+      xyz="-2.853 2.987 -2.9363"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp5_b" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp6_r">
+    <inertial>
+      <origin
+        xyz="0 0.00150000000000006 -4.44089209850063E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000003" />
+      <inertia
+        ixx="3.24810000000004E-06"
+        ixy="-2.64697796016966E-23"
+        ixz="0"
+        iyy="6.48000000000008E-06"
+        iyz="2.09177327423048E-23"
+        izz="3.24810000000004E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp6_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp6_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp6j"
+    type="fixed">
+    <origin
+      xyz="-6.458 2.442 -2.9363"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp6_r" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp7_r">
+    <inertial>
+      <origin
+        xyz="0 0.00150000000000006 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000004" />
+      <inertia
+        ixx="3.24810000000009E-06"
+        ixy="-6.61744490042415E-24"
+        ixz="0"
+        iyy="6.48000000000027E-06"
+        iyz="2.09177327423326E-23"
+        izz="3.24810000000018E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp7_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp7_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp7j"
+    type="fixed">
+    <origin
+      xyz="-6.028 4.087 -2.9113"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp7_r" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp8_b">
+    <inertial>
+      <origin
+        xyz="0 0.00150000000000006 -4.44089209850063E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000003" />
+      <inertia
+        ixx="3.24810000000004E-06"
+        ixy="-2.64697796016966E-23"
+        ixz="0"
+        iyy="6.48000000000008E-06"
+        iyz="2.09177327423048E-23"
+        izz="3.24810000000004E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp8_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp8_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp8j"
+    type="fixed">
+    <origin
+      xyz="-2.455 3.607 -2.9363"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp8_b" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp9_b">
+    <inertial>
+      <origin
+        xyz="4.44089209850063E-16 0.00150000000000006 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000003" />
+      <inertia
+        ixx="3.24810000000004E-06"
+        ixy="-1.98523347012724E-23"
+        ixz="0"
+        iyy="6.48000000000008E-06"
+        iyz="2.7535177642729E-23"
+        izz="3.24810000000004E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp9_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp9_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp9j"
+    type="fixed">
+    <origin
+      xyz="-2.903 5.186 -2.9113"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp9_b" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp10_r">
+    <inertial>
+      <origin
+        xyz="0 0.00150000000000006 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000004" />
+      <inertia
+        ixx="3.24810000000009E-06"
+        ixy="-1.32348898008483E-23"
+        ixz="0"
+        iyy="6.48000000000027E-06"
+        iyz="1.43002878419084E-23"
+        izz="3.24810000000018E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp10_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp10_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp10j"
+    type="fixed">
+    <origin
+      xyz="-6.45802825430543 4.56703604778046 -2.91126495017372"
+      rpy="0 0 1.5707963267949" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp10_r" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp11_r">
+    <inertial>
+      <origin
+        xyz="0 0.00150000000000006 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000004" />
+      <inertia
+        ixx="3.24810000000009E-06"
+        ixy="-6.61744490042415E-24"
+        ixz="0"
+        iyy="6.48000000000027E-06"
+        iyz="2.09177327423326E-23"
+        izz="3.24810000000018E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp11_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp11_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp11j"
+    type="fixed">
+    <origin
+      xyz="-6.003 8.687 -2.9113"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp11_r" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp12_r">
+    <inertial>
+      <origin
+        xyz="0 0.00149999999999983 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0107999999999993" />
+      <inertia
+        ixx="3.24809999999975E-06"
+        ixy="6.61744490050063E-24"
+        ixz="0"
+        iyy="6.4799999999994E-06"
+        iyz="-2.78462081391924E-24"
+        izz="3.24809999999965E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp12_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp12_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp12j"
+    type="fixed">
+    <origin
+      xyz="-1.355 8.257 -2.9113"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp12_r" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp13_r">
+    <inertial>
+      <origin
+        xyz="0 0.00149999999999917 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000003" />
+      <inertia
+        ixx="3.24810000000006E-06"
+        ixy="-1.32348898008483E-23"
+        ixz="-2.11758236813574E-22"
+        iyy="6.48000000000017E-06"
+        iyz="2.09177327423185E-23"
+        izz="3.24810000000011E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp13_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp13_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp13j"
+    type="fixed">
+    <origin
+      xyz="-1.768 6.484 -2.9113"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp13_r" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp14_b">
+    <inertial>
+      <origin
+        xyz="0 0.00150000000000006 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000004" />
+      <inertia
+        ixx="3.24810000000009E-06"
+        ixy="-1.32348898008483E-23"
+        ixz="0"
+        iyy="6.48000000000027E-06"
+        iyz="1.43002878419084E-23"
+        izz="3.24810000000018E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp14_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp14_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp14j"
+    type="fixed">
+    <origin
+      xyz="-5.361 7.067 -2.9113"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp14_b" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp15_b">
+    <inertial>
+      <origin
+        xyz="0 0.00150000000000006 4.44089209850063E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000004" />
+      <inertia
+        ixx="3.24810000000009E-06"
+        ixy="-6.61744490042415E-24"
+        ixz="0"
+        iyy="6.48000000000027E-06"
+        iyz="2.09177327423326E-23"
+        izz="3.24810000000018E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp15_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp15_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp15j"
+    type="fixed">
+    <origin
+      xyz="-4.888 5.284 -2.9363"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp15_b" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp16_r">
+    <inertial>
+      <origin
+        xyz="0 0.00150000000000006 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0107999999999996" />
+      <inertia
+        ixx="3.24809999999985E-06"
+        ixy="-2.87311212020243E-35"
+        ixz="3.89249573423571E-39"
+        iyy="6.47999999999979E-06"
+        iyz="-9.40206571439416E-24"
+        izz="3.24809999999994E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp16_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp16_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp16j"
+    type="fixed">
+    <origin
+      xyz="-1.358 5.882 -2.9363"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp16_r" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp17_b">
+    <inertial>
+      <origin
+        xyz="-2.22044604925031E-16 0.00149999999999995 4.44089209850063E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0107999999999999" />
+      <inertia
+        ixx="3.24809999999994E-06"
+        ixy="1.83670992315982E-36"
+        ixz="-4.23516473627149E-22"
+        iyy="6.47999999999993E-06"
+        iyz="9.06655596411588E-24"
+        izz="3.24809999999999E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp17_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp17_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp17j"
+    type="fixed">
+    <origin
+      xyz="-1.818 0.88504 -2.9113"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp17_b" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp18_b">
+    <inertial>
+      <origin
+        xyz="2.22044604925031E-16 0.00149999999999917 4.44089209850063E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000004" />
+      <inertia
+        ixx="3.24810000000006E-06"
+        ixy="-1.98523347012721E-23"
+        ixz="-2.11758236813574E-22"
+        iyy="6.48000000000017E-06"
+        iyz="1.43002878418947E-23"
+        izz="3.24810000000011E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp18_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp18_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp18j"
+    type="fixed">
+    <origin
+      xyz="4.842 1.432 -2.9113"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp18_b" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp19_b">
+    <inertial>
+      <origin
+        xyz="0 0.00149999999999961 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000004" />
+      <inertia
+        ixx="3.24810000000009E-06"
+        ixy="-6.61744490042415E-24"
+        ixz="0"
+        iyy="6.48000000000027E-06"
+        iyz="2.09177327423326E-23"
+        izz="3.24810000000018E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp19_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp19_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp19j"
+    type="fixed">
+    <origin
+      xyz="4.372 2.987 -2.9113"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp19_b" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp20_r">
+    <inertial>
+      <origin
+        xyz="0 0.00149999999999983 -4.44089209850063E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0107999999999995" />
+      <inertia
+        ixx="3.2480999999998E-06"
+        ixy="-2.64697796016756E-23"
+        ixz="-8.10936611299124E-39"
+        iyy="6.4799999999996E-06"
+        iyz="3.83282408647927E-24"
+        izz="3.2480999999998E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp20_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp20_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp20j"
+    type="fixed">
+    <origin
+      xyz="-1.261 2.427 -2.9213"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp20_r" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp21_r">
+    <inertial>
+      <origin
+        xyz="1.11022302462516E-16 0.00150000000000006 -4.44089209850063E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000003" />
+      <inertia
+        ixx="3.24810000000006E-06"
+        ixy="-1.32348898008483E-23"
+        ixz="-2.11758236813574E-22"
+        iyy="6.48000000000017E-06"
+        iyz="2.09177327423185E-23"
+        izz="3.24810000000011E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp21_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp21_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp21j"
+    type="fixed">
+    <origin
+      xyz="-0.79803 8.687 -2.9413"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp21_r" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp22_r">
+    <inertial>
+      <origin
+        xyz="0 0.00150000000000017 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0107999999999997" />
+      <inertia
+        ixx="3.24809999999987E-06"
+        ixy="3.82035664017243E-35"
+        ixz="-2.11758236813571E-22"
+        iyy="6.47999999999964E-06"
+        iyz="-1.078577873716E-23"
+        izz="3.24809999999977E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp22_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp22_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp22j"
+    type="fixed">
+    <origin
+      xyz="0.84497 8.307 -2.9113"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp22_r" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp23_b">
+    <inertial>
+      <origin
+        xyz="-5.55111512312578E-17 0.00150000000000006 4.44089209850063E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000003" />
+      <inertia
+        ixx="3.24810000000006E-06"
+        ixy="-1.32348898008483E-23"
+        ixz="-2.11758236813574E-22"
+        iyy="6.48000000000017E-06"
+        iyz="2.09177327423185E-23"
+        izz="3.24810000000011E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp23_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp23_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp23j"
+    type="fixed">
+    <origin
+      xyz="0.32738 3.084 -2.9113"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp23_b" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp24_b">
+    <inertial>
+      <origin
+        xyz="-4.44089209850063E-16 0.00150000000000095 4.44089209850063E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000003" />
+      <inertia
+        ixx="3.24810000000004E-06"
+        ixy="-2.64697796016966E-23"
+        ixz="-1.62187322259838E-40"
+        iyy="6.48000000000008E-06"
+        iyz="2.09177327423048E-23"
+        izz="3.24810000000004E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp24_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp24_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp24j"
+    type="fixed">
+    <origin
+      xyz="6.945 3.5762 -2.9113"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp24_b" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp25_b">
+    <inertial>
+      <origin
+        xyz="8.88178419700125E-16 0.00150000000000006 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000004" />
+      <inertia
+        ixx="3.24810000000009E-06"
+        ixy="-6.61744490042415E-24"
+        ixz="0"
+        iyy="6.48000000000027E-06"
+        iyz="2.09177327423326E-23"
+        izz="3.24810000000018E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp25_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp25_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp25j"
+    type="fixed">
+    <origin
+      xyz="6.5065 8.687 -2.9121"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp25_b" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp26_b">
+    <inertial>
+      <origin
+        xyz="0 0.00150000000000006 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0107999999999997" />
+      <inertia
+        ixx="3.24809999999987E-06"
+        ixy="6.61744490038602E-24"
+        ixz="-2.11758236813571E-22"
+        iyy="6.47999999999964E-06"
+        iyz="-4.16833383673279E-24"
+        izz="3.24809999999977E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp26_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp26_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp26j"
+    type="fixed">
+    <origin
+      xyz="0.93897 8.217 -2.9113"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp26_b" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp27_b">
+    <inertial>
+      <origin
+        xyz="0 0.00150000000000006 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000003" />
+      <inertia
+        ixx="3.24810000000006E-06"
+        ixy="-1.32348898008483E-23"
+        ixz="-2.11758236813574E-22"
+        iyy="6.48000000000017E-06"
+        iyz="2.09177327423185E-23"
+        izz="3.24810000000011E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp27_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp27_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp27j"
+    type="fixed">
+    <origin
+      xyz="1.412 4.184 -2.9113"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp27_b" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp28_b">
+    <inertial>
+      <origin
+        xyz="0 0.00149999999999917 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000004" />
+      <inertia
+        ixx="3.24810000000009E-06"
+        ixy="-1.32348898008483E-23"
+        ixz="0"
+        iyy="6.48000000000027E-06"
+        iyz="1.43002878419084E-23"
+        izz="3.24810000000018E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp28_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp28_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp28j"
+    type="fixed">
+    <origin
+      xyz="5.842 4.707 -2.9113"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp28_b" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp29_b">
+    <inertial>
+      <origin
+        xyz="-8.88178419700125E-16 0.00150000000000006 4.44089209850063E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000004" />
+      <inertia
+        ixx="3.24810000000009E-06"
+        ixy="-6.61744490042415E-24"
+        ixz="0"
+        iyy="6.48000000000027E-06"
+        iyz="2.09177327423326E-23"
+        izz="3.24810000000018E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp29_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp29_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp29j"
+    type="fixed">
+    <origin
+      xyz="5.372 6.387 -2.9113"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp29_b" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp30_r">
+    <inertial>
+      <origin
+        xyz="8.88178419700125E-16 0.00150000000000006 4.44089209850063E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000004" />
+      <inertia
+        ixx="3.24810000000009E-06"
+        ixy="-1.32348898008483E-23"
+        ixz="0"
+        iyy="6.48000000000027E-06"
+        iyz="1.43002878419084E-23"
+        izz="3.24810000000018E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp30_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp30_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp30j"
+    type="fixed">
+    <origin
+      xyz="2.042 5.817 -2.9184"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp30_r" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp31_r">
+    <inertial>
+      <origin
+        xyz="0 0.00150000000000006 4.44089209850063E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000003" />
+      <inertia
+        ixx="3.24810000000004E-06"
+        ixy="-1.98523347012724E-23"
+        ixz="-1.62187322259838E-40"
+        iyy="6.48000000000008E-06"
+        iyz="2.7535177642729E-23"
+        izz="3.24810000000004E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp31_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp31_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp31j"
+    type="fixed">
+    <origin
+      xyz="2.472 7.587 -2.9113"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp31_r" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp32_b">
+    <inertial>
+      <origin
+        xyz="0 0.00150000000000095 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000004" />
+      <inertia
+        ixx="3.24810000000009E-06"
+        ixy="-1.32348898008483E-23"
+        ixz="0"
+        iyy="6.48000000000027E-06"
+        iyz="1.43002878419084E-23"
+        izz="3.24810000000018E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp32_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp32_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp32j"
+    type="fixed">
+    <origin
+      xyz="5.845 7.007 -2.9113"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp32_b" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp33_r">
+    <inertial>
+      <origin
+        xyz="0 0.00150000000000006 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000004" />
+      <inertia
+        ixx="3.24810000000009E-06"
+        ixy="-6.61744490042415E-24"
+        ixz="0"
+        iyy="6.48000000000027E-06"
+        iyz="2.09177327423326E-23"
+        izz="3.24810000000018E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp33_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp33_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp33j"
+    type="fixed">
+    <origin
+      xyz="5.37 8.687 -2.9102"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp33_r" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp34_r">
+    <inertial>
+      <origin
+        xyz="0 0.00150000000000006 -4.44089209850063E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000001" />
+      <inertia
+        ixx="3.24809999999999E-06"
+        ixy="-1.32348898008485E-23"
+        ixz="-2.11758236813567E-22"
+        iyy="6.47999999999988E-06"
+        iyz="2.75351776427015E-23"
+        izz="3.2480999999999E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp34_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp34_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp34j"
+    type="fixed">
+    <origin
+      xyz="6.945 8.2348 -2.9113"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp34_r" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp35_r">
+    <inertial>
+      <origin
+        xyz="8.88178419700125E-16 0.00150000000000028 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0107999999999996" />
+      <inertia
+        ixx="3.24809999999985E-06"
+        ixy="-2.79182735764319E-35"
+        ixz="4.05468305649556E-39"
+        iyy="6.47999999999979E-06"
+        iyz="-2.78462081396994E-24"
+        izz="3.24809999999994E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp35_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp35_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp35j"
+    type="fixed">
+    <origin
+      xyz="6.5258 1.984 -2.9113"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp35_r" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp36_b">
+    <inertial>
+      <origin
+        xyz="0 0.00150000000000006 4.44089209850063E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000003" />
+      <inertia
+        ixx="3.24810000000004E-06"
+        ixy="-2.64697796016966E-23"
+        ixz="0"
+        iyy="6.48000000000008E-06"
+        iyz="2.09177327423048E-23"
+        izz="3.24810000000004E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp36_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp36_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp36j"
+    type="fixed">
+    <origin
+      xyz="4.939 2.497 -2.9113"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp36_b" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp37_b">
+    <inertial>
+      <origin
+        xyz="0 0.00150000000000006 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108" />
+      <inertia
+        ixx="3.24809999999997E-06"
+        ixy="-1.32348898008624E-23"
+        ixz="-3.11851437363747E-36"
+        iyy="6.48000000000003E-06"
+        iyz="-1.74032236375826E-23"
+        izz="3.24810000000006E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp37_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp37_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp37j"
+    type="fixed">
+    <origin
+      xyz="5.422 0.88404 -2.9113"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp37_b" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp38_r">
+    <inertial>
+      <origin
+        xyz="-2.22044604925031E-16 0.00150000000000183 -4.44089209850063E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000003" />
+      <inertia
+        ixx="3.24810000000006E-06"
+        ixy="-1.98523347012721E-23"
+        ixz="-2.11758236813574E-22"
+        iyy="6.48000000000017E-06"
+        iyz="1.43002878418947E-23"
+        izz="3.24810000000011E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp38_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp38_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp38j"
+    type="fixed">
+    <origin
+      xyz="6.945 1.3571 -2.9011"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp38_r" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp39_r">
+    <inertial>
+      <origin
+        xyz="-8.88178419700125E-16 0.0015 -4.44089209850063E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108" />
+      <inertia
+        ixx="3.24809999999997E-06"
+        ixy="-6.61744490042418E-24"
+        ixz="-3.11851437363747E-36"
+        iyy="6.48000000000003E-06"
+        iyz="-1.74032236375816E-23"
+        izz="3.24810000000006E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp39_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://world2_upd/meshes/cp39_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp39j"
+    type="fixed">
+    <origin
+      xyz="6.5154 -0.21596 -2.9113"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp39_r" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

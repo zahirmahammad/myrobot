@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="worldv3">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.425115110970957 4.54042041545764 -3.25358123416043"
+        rpy="0 0 0" />
+      <mass
+        value="2573.8812" />
+      <inertia
+        ixx="26975.5512846021"
+        ixy="-4824.20809797755"
+        ixz="-0.0074023472119172"
+        iyy="14841.9767137964"
+        iyz="-0.00658534998791365"
+        izz="41730.6573822185" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://worldv3/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://worldv3/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="cp1_r">
+    <inertial>
+      <origin
+        xyz="0 0.00150000000000006 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000003" />
+      <inertia
+        ixx="3.24810000000006E-06"
+        ixy="1.32348898008481E-23"
+        ixz="-4.2351647362715E-22"
+        iyy="6.48000000000016E-06"
+        iyz="1.06539804104437E-24"
+        izz="3.2481000000001E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://worldv3/meshes/cp1_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://worldv3/meshes/cp1_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp1j"
+    type="fixed">
+    <origin
+      xyz="-3.54 0.19522 -3.1586"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp1_r" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp2_r">
+    <inertial>
+      <origin
+        xyz="0 0.00150000000000006 4.44089209850063E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0107999999999995" />
+      <inertia
+        ixx="3.2480999999998E-06"
+        ixy="-1.98523347012514E-23"
+        ixz="-8.10936611299124E-39"
+        iyy="6.4799999999996E-06"
+        iyz="1.04502689869028E-23"
+        izz="3.2480999999998E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://worldv3/meshes/cp2_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://worldv3/meshes/cp2_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp2j"
+    type="fixed">
+    <origin
+      xyz="-2.985 1.8152 -3.1586"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp2_r" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp3_b">
+    <inertial>
+      <origin
+        xyz="0 0.00149999999999995 -4.44089209850063E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0107999999999999" />
+      <inertia
+        ixx="3.24809999999994E-06"
+        ixy="1.83670992315982E-36"
+        ixz="2.11758236813575E-22"
+        iyy="6.47999999999993E-06"
+        iyz="-4.16833383673257E-24"
+        izz="3.24809999999999E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://worldv3/meshes/cp3_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://worldv3/meshes/cp3_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp3_j"
+    type="fixed">
+    <origin
+      xyz="0.76299 1.4352 -3.1586"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp3_b" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp4_b">
+    <inertial>
+      <origin
+        xyz="0 0.00150000000000006 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000003" />
+      <inertia
+        ixx="3.24810000000006E-06"
+        ixy="6.61744490042431E-24"
+        ixz="-2.11758236813574E-22"
+        iyy="6.48000000000016E-06"
+        iyz="7.68284294146855E-24"
+        izz="3.2481000000001E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://worldv3/meshes/cp4_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://worldv3/meshes/cp4_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp4j"
+    type="fixed">
+    <origin
+      xyz="0.064988 2.9152 -3.1836"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp4_b" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp5_r">
+    <inertial>
+      <origin
+        xyz="0 0.00150000000000006 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000003" />
+      <inertia
+        ixx="3.24810000000004E-06"
+        ixy="-2.64697796016966E-23"
+        ixz="0"
+        iyy="6.48000000000008E-06"
+        iyz="2.09177327423048E-23"
+        izz="3.24810000000004E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://worldv3/meshes/cp5_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://worldv3/meshes/cp5_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp5j"
+    type="fixed">
+    <origin
+      xyz="-3.543 2.3702 -3.1836"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp5_r" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp6_r">
+    <inertial>
+      <origin
+        xyz="4.44089209850063E-16 0.00150000000000006 -4.44089209850063E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000003" />
+      <inertia
+        ixx="3.24810000000004E-06"
+        ixy="-1.98523347012724E-23"
+        ixz="0"
+        iyy="6.48000000000008E-06"
+        iyz="2.7535177642729E-23"
+        izz="3.24810000000004E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://worldv3/meshes/cp6_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://worldv3/meshes/cp6_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp6j"
+    type="fixed">
+    <origin
+      xyz="-3.11 4.0152 -3.1586"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp6_r" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp7_b">
+    <inertial>
+      <origin
+        xyz="-4.44089209850063E-16 0.00150000000000028 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0107999999999999" />
+      <inertia
+        ixx="3.24809999999992E-06"
+        ixy="-3.044024654194E-23"
+        ixz="-1.62187322259819E-38"
+        iyy="6.47999999999984E-06"
+        iyz="-1.07857787371586E-23"
+        izz="3.24809999999992E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://worldv3/meshes/cp7_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://worldv3/meshes/cp7_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp7j"
+    type="fixed">
+    <origin
+      xyz="0.75999 3.5352 -3.1836"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp7_b" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp8_b">
+    <inertial>
+      <origin
+        xyz="3.46944695195361E-18 0.00150000000000006 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000003" />
+      <inertia
+        ixx="3.24810000000006E-06"
+        ixy="6.61744490042431E-24"
+        ixz="-2.11758236813574E-22"
+        iyy="6.48000000000016E-06"
+        iyz="7.68284294146855E-24"
+        izz="3.2481000000001E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://worldv3/meshes/cp8_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://worldv3/meshes/cp8_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp8j"
+    type="fixed">
+    <origin
+      xyz="0.014988 5.1152 -3.1586"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp8_b" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp9_r">
+    <inertial>
+      <origin
+        xyz="-8.88178419700125E-16 0.00150000000000006 4.44089209850063E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000004" />
+      <inertia
+        ixx="3.24810000000009E-06"
+        ixy="-1.32348898008483E-23"
+        ixz="0"
+        iyy="6.48000000000027E-06"
+        iyz="1.43002878419084E-23"
+        izz="3.24810000000018E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://worldv3/meshes/cp9_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://worldv3/meshes/cp9_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp9j"
+    type="fixed">
+    <origin
+      xyz="-3.54 4.4952 -3.1586"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp9_r" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp10_r">
+    <inertial>
+      <origin
+        xyz="0 0.00150000000000006 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000003" />
+      <inertia
+        ixx="3.24810000000004E-06"
+        ixy="-1.98523347012724E-23"
+        ixz="-1.62187322259838E-40"
+        iyy="6.48000000000008E-06"
+        iyz="2.7535177642729E-23"
+        izz="3.24810000000004E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://worldv3/meshes/cp10_r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://worldv3/meshes/cp10_r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp10j"
+    type="fixed">
+    <origin
+      xyz="-3.1339 8.9152 -3.1729"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp10_r" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cp11_g">
+    <inertial>
+      <origin
+        xyz="0 0.00150000000000006 -4.44089209850063E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108000000000001" />
+      <inertia
+        ixx="3.24809999999999E-06"
+        ixy="-1.32348898008485E-23"
+        ixz="-2.11758236813567E-22"
+        iyy="6.47999999999988E-06"
+        iyz="2.75351776427015E-23"
+        izz="3.2480999999999E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://worldv3/meshes/cp11_g.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://worldv3/meshes/cp11_g.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cp11j"
+    type="fixed">
+    <origin
+      xyz="4.763 8.4064 -3.1611"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="cp11_g" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
