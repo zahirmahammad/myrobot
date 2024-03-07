@@ -146,7 +146,7 @@ class Autonomous(Node):
         self.right = ranges[:10]  # 90 degrees right
         # print(f"left Distance: {self.left}")
         # print(f"right Distance: {self.right}")
-        # print(f"Front Distance: {self.front}")
+        print(f"Front Distance: {self.front}")
 
         if any(value<0.4 for value in self.left):
             self.turnright_angle(2)
