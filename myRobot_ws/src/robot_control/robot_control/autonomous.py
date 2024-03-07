@@ -45,9 +45,9 @@ class Autonomous(Node):
         self.steer = 10.0
         self.wheel_velocities = Float64MultiArray()
         self.yaw=0.0
-        self.front=0.0
-        self.left=0.0
-        self.right=0.0
+        self.front=1000.0
+        self.left=1000.0
+        self.right=1000.0
         self.cv_image=None
         self.goal = False
 
